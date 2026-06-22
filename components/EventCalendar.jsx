@@ -242,21 +242,21 @@ export default function EventCalendar() {
                           onChange={e => setNewEvent({...newEvent, title: e.target.value})}
                           className="w-full rounded-xl border border-border bg-bg-2 p-4 text-sm font-medium text-fg focus:ring-2 focus:ring-accent outline-none placeholder:text-fg-3"
                         />
-                        <div className="flex gap-2">
+                        <div className="flex flex-col sm:flex-row gap-2">
                           <input
                             placeholder="Time (e.g. 10:00 AM)"
                             value={newEvent.time}
                             onChange={e => setNewEvent({...newEvent, time: e.target.value})}
-                            className="w-1/2 rounded-xl border border-border bg-bg-2 p-4 text-sm font-medium text-fg outline-none focus:ring-2 focus:ring-accent placeholder:text-fg-3"
+                            className="w-full sm:w-1/2 rounded-xl border border-border bg-bg-2 p-4 text-sm font-medium text-fg outline-none focus:ring-2 focus:ring-accent placeholder:text-fg-3"
                           />
                           <input
                             placeholder="Location"
                             value={newEvent.location}
                             onChange={e => setNewEvent({...newEvent, location: e.target.value})}
-                            className="w-1/2 rounded-xl border border-border bg-bg-2 p-4 text-sm font-medium text-fg outline-none focus:ring-2 focus:ring-accent placeholder:text-fg-3"
+                            className="w-full sm:w-1/2 rounded-xl border border-border bg-bg-2 p-4 text-sm font-medium text-fg outline-none focus:ring-2 focus:ring-accent placeholder:text-fg-3"
                           />
                         </div>
-                        <div className="flex gap-2">
+                        <div className="flex flex-col sm:flex-row gap-2">
                           <button 
                             type="button"
                             onClick={() => setShowAddForm(false)}

@@ -290,6 +290,8 @@ export default function DepartmentPage() {
 
   const inputStyle = (hasError) => ({
     width: '100%',
+    maxWidth: '100%',
+    boxSizing: 'border-box',
     padding: '0.85rem 1.1rem',
     background: 'var(--bg)',
     border: `1.5px solid ${hasError ? '#ef4444' : 'var(--glass-border)'}`,
@@ -739,7 +741,7 @@ export default function DepartmentPage() {
         <section
           id="join"
           style={{
-            padding: 'clamp(4rem, 8vw, 7rem) 1.5rem',
+            padding: 'clamp(3rem, 8vw, 7rem) clamp(1rem, 4vw, 1.5rem)',
             background: 'var(--bg)',
             transition: 'background 0.5s ease',
           }}
@@ -750,7 +752,7 @@ export default function DepartmentPage() {
               initial="hidden"
               whileInView="show"
               viewport={{ once: true }}
-              style={{ maxWidth: '720px', margin: '0 auto' }}
+              style={{ maxWidth: '720px', margin: '0 auto', width: '100%' }}
             >
               {/* Form Header */}
               <div style={{ textAlign: 'center', marginBottom: '3rem' }}>
@@ -813,7 +815,7 @@ export default function DepartmentPage() {
                   onSubmit={handleSubmit}
                   noValidate
                   className="card"
-                  style={{ padding: 'clamp(2rem, 4vw, 3rem)' }}
+                  style={{ padding: 'clamp(1.25rem, 4vw, 3rem)', boxSizing: 'border-box', width: '100%' }}
                 >
                   {/* Hidden department field */}
                   <input type="hidden" name="department" value={dept.name} />
@@ -821,7 +823,7 @@ export default function DepartmentPage() {
                   <div
                     style={{
                       display: 'grid',
-                      gridTemplateColumns: 'repeat(auto-fit, minmax(260px, 1fr))',
+                      gridTemplateColumns: 'repeat(auto-fill, minmax(min(100%, 260px), 1fr))',
                       gap: '1.25rem',
                     }}
                   >

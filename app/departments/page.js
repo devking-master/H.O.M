@@ -42,7 +42,7 @@ const departments = [
     slug: 'youth',
     icon: Zap,
     color: '#a78bfa',
-    image: '/youth.jpg',
+    image: '/youthmember.jpg',
     description: 'Empowering the next generation to live with passion, purpose, and unshakeable faith through dynamic gatherings, small groups, and community service.',
     leader: 'Brig. Samuel',
   },
