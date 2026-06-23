@@ -40,7 +40,7 @@ const featuredDepts = [
     description: 'Nurturing faith in our little ones through creative Bible storytelling, fun activities, and love.',
     color: '#f59e0b',
     icon: Smile,
-    image: '/Children.jpg',
+    image: '/children.jpg',
   },
 ];
 
