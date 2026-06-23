@@ -127,7 +127,7 @@ const departmentData = {
     color: '#f59e0b',
     colorRgb: '245, 158, 11',
     tagline: 'Planting Seeds That Bear Eternal Fruit',
-    image: '/Children.jpg',
+    image: '/children.jpg',
     about:
       'The Children Ministry at House of Mercy is dedicated to nurturing the faith of our youngest members from ages 0–15. We create age-appropriate, engaging, and safe environments where children are taught the Word of God, shown the love of Christ, and encouraged to develop their own relationship with God. Our passionate team of teachers, helpers, and leaders are committed to excellence in children\'s ministry.',
     mission:
