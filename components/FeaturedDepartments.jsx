@@ -177,7 +177,7 @@ export default function FeaturedDepartments() {
               className="group-hover:opacity-40 group-hover:scale-105"
             >
               <Image
-                src="/youth.jpg"
+                src="/youthmember.jpg"
                 alt="Youth Department"
                 fill
                 style={{ objectFit: 'cover' }}
